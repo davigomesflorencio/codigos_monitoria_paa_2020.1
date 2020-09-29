@@ -14,7 +14,7 @@ class Graph:
     
     def getNodes(self):
         return self.graph.nodes
-
+        
     def getLenNodes(self):
         return self.graph.number_of_nodes()
     
@@ -24,6 +24,9 @@ class Graph:
     def addEdge(self, u, v): 
         self.graph.add_edge(u,v)
 
+    def getNeighbors(self,v):
+        return self.graph.neighbors(v)
+        
     def getVertexDegreee(self,v):
         grau=0
         for _ in self.graph.neighbors(v):
