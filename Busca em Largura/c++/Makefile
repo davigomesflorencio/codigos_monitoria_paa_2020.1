@@ -9,7 +9,7 @@ EXEC = main
 # all: 
 
 fila1: $(SRC)Fila1/fila.cpp $(SRC)Fila1/teste.cpp 
-	$(CXX) -c .$(SRC)/Fila1/fila.cpp && $(CXX) -c $(SRC)/Fila1/teste.cpp && $(CXX) -o teste fila.o teste.o
+	$(CXX) -c $(SRC)Fila1/fila.cpp && $(CXX) -c $(SRC)Fila1/teste.cpp && $(CXX) -o teste fila.o teste.o
 
 fila2: $(SRC)Fila2/fila.cpp $(SRC)Fila2/teste.cpp 
 	$(CXX) -c $(SRC)Fila2/fila.cpp && $(CXX) -c $(SRC)Fila2/teste.cpp && $(CXX) -o teste fila.o teste.o

@@ -1,5 +1,5 @@
 #include <iostream>
-#include <queue>
+// #include <queue>
 
 using namespace std;
 
@@ -14,10 +14,11 @@ class Fila {
 	    item = (int *)malloc(sizeof(int)*tam);
 	}
 
-	 void Enqueue(int valor)
+	void Enqueue(int valor)
     {
         item[fim++] = valor;
     }
+
     int front(){
         return item[ini]; 
     }
@@ -26,7 +27,7 @@ class Fila {
     {
         for(int i = ini; i<fim; i++)
         {
-            cout << item[i] <<"\n";
+            cout << item[i] <<" ";
         }
     }
 

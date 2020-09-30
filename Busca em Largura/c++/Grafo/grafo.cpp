@@ -25,6 +25,7 @@ Grafo::Grafo(int V)
 void Grafo::adicionarAresta(int v1, int v2)
 {
 	adj[v1].push_back(v2);
+	// adj[v2].push_back(v1);
 }
 
 int Grafo::grauVertice(int v)
